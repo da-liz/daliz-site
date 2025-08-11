@@ -150,3 +150,11 @@ a:hover{color:var(--rose-600)}
   .grid-3{grid-template-columns:1fr}
   .navlinks{display:none}
 }
+.hero-content {
+  background-image: url("assets/Logo - Hi-Res No Background.png");
+  background-size: contain; /* or cover, depending on look */
+  background-repeat: no-repeat;
+  /* Optional: for spacing and alignment */
+  text-align: center;
+
+}
