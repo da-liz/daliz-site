@@ -31,39 +31,44 @@
     </div>
   </header>
 
-  <main id="home">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-bg"></div>
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <h1>Where Quality Meets Style</h1>
-          <p class="lead">
-            Da-Liz Designs is a boutique clothing store dedicated to high-quality churidar sets and stylish kurtas for women — curated for elegance, comfort, and modern charm.
-          </p>
-          <div class="hero-cta">
-            <a class="btn" href="#collections">Explore Collections</a>
-            <a class="btn outline" href="#contact">Enquire Now</a>
-          </div>
-          <div class="pill-row">
-            <span class="pill">Premium Fabrics</span>
-            <span class="pill">Fine Craftsmanship</span>
-            <span class="pill">Timeless Designs</span>
-            <span class="pill">Custom Tailoring</span>
-          </div>
-        </div>
-        <div class="hero-card card">
-          <h3>Our Promise</h3>
-          <p>
-            Every woman deserves to feel confident and stylish without compromising on quality. Our selection reflects grace, culture, and contemporary fashion — for daily wear and special occasions.
-          </p>
-          <div class="logo-stack">
-            <img src="assets/Da-Liz Designs_Icon Only.png" alt="Da-Liz lotus" />
-            <img src="assets/Logo - Hi-Res No Background.png" alt="Da-Liz full logo" />
-          </div>
-        </div>
+<section class="hero">
+  <!-- Responsive hero image with fallbacks -->
+  <picture class="hero-media">
+    <source srcset="assets/hero-mobile-1080x1350.webp" media="(max-width: 768px)" type="image/webp">
+    <source srcset="assets/hero-wide-1920x1080.webp" type="image/webp">
+    <source srcset="assets/hero-mobile-1080x1350.jpg" media="(max-width: 768px)">
+    <img src="assets/hero-wide-1920x1080.jpg" alt="Da-Liz Designs boutique interior" loading="eager" decoding="async">
+  </picture>
+  <div class="hero-overlay"></div>
+
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <h1>Where Quality Meets Style</h1>
+      <p class="lead">
+        Da-Liz Designs is a boutique clothing store dedicated to high-quality churidar sets and stylish kurtas for women — curated for elegance, comfort, and modern charm.
+      </p>
+      <div class="hero-cta">
+        <a class="btn" href="#collections">Explore Collections</a>
+        <a class="btn outline" href="#contact">Enquire Now</a>
       </div>
-    </section>
+      <div class="pill-row">
+        <span class="pill">Premium Fabrics</span>
+        <span class="pill">Fine Craftsmanship</span>
+        <span class="pill">Timeless Designs</span>
+        <span class="pill">Custom Tailoring</span>
+      </div>
+    </div>
+
+    <div class="hero-card card">
+      <h3>Our Promise</h3>
+      <p>Every woman deserves to feel confident and stylish without compromising on quality. Our selection reflects grace, culture, and contemporary fashion.</p>
+      <div class="logo-stack">
+        <img src="assets/Da-Liz Designs_Icon Only.png" alt="Da-Liz lotus" />
+        <img src="assets/Logo - Hi-Res No Background.png" alt="Da-Liz full logo" />
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- COLLECTIONS -->
     <section id="collections" class="section">
