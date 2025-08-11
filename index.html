@@ -1,151 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Da-Liz Designs — Where Quality Meets Style</title>
-  <meta name="description" content="Da-Liz Designs: premium churidar sets and stylish kurtas for women. Elegant, comfortable, and modern ethnic wear in Kangarappady.">
-  <link rel="icon" href="assets/favicon.png">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Premium churidar sets and stylish kurtas for women. Elegant, comfortable ethnic wear blending tradition and modern design. Kangarappady, Medical College Rd." />
+  <link rel="icon" href="assets/favicon.png" />
+  <!-- Elegant fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="topbar">✨ Opening Offer: <strong>20% OFF</strong> your first purchase — Valid <strong>17/08/2025–07/09/2025</strong></div>
+  <!-- Announcement -->
+  <div class="topbar">
+    ✨ Opening Offer: <strong>20% OFF</strong> your first purchase — Valid <strong>17/08/2025–07/09/2025</strong>
+  </div>
 
-  <nav>
+  <!-- Header / Nav -->
+  <header class="site-header">
     <div class="container navwrap">
-      <a class="brand" href="#home">
-        <img src="assets/Da-Liz Designs_Name Only.png" alt="Da-Liz Designs logo">
+      <a class="brand" href="#home" aria-label="Da-Liz Designs">
+        <img src="assets/Da-Liz Designs_Name Only.png" alt="Da-Liz Designs" />
       </a>
-      <div class="navlinks">
+      <nav class="navlinks">
         <a href="#collections">Collections</a>
         <a href="#about">About</a>
         <a href="#visit">Visit</a>
-        <a href="#contact" class="btn">Contact</a>
-      </div>
+        <a class="btn btn-small" href="#contact">Contact</a>
+      </nav>
     </div>
-  </nav>
+  </header>
 
   <main id="home">
+    <!-- HERO -->
     <section class="hero">
+      <div class="hero-bg"></div>
       <div class="container hero-inner">
-        <div>
+        <div class="hero-copy">
           <h1>Where Quality Meets Style</h1>
-          <p class="lead">Da-Liz Designs is a boutique clothing store dedicated to offering high-quality churidar sets and stylish kurtas for women. We curate elegant, comfortable, and trendy ethnic wear that blends traditional charm with a modern touch.</p>
-          <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
+          <p class="lead">
+            Da-Liz Designs is a boutique clothing store dedicated to high-quality churidar sets and stylish kurtas for women — curated for elegance, comfort, and modern charm.
+          </p>
+          <div class="hero-cta">
             <a class="btn" href="#collections">Explore Collections</a>
             <a class="btn outline" href="#contact">Enquire Now</a>
           </div>
-          <div class="badges">
-            <div class="badge">Premium Fabrics</div>
-            <div class="badge" style="background:#fef3c7;color:#7c2d12">Fine Craftsmanship</div>
-            <div class="badge" style="background:#dcfce7;color:#065f46">Timeless Designs</div>
+          <div class="pill-row">
+            <span class="pill">Premium Fabrics</span>
+            <span class="pill">Fine Craftsmanship</span>
+            <span class="pill">Timeless Designs</span>
+            <span class="pill">Custom Tailoring</span>
           </div>
         </div>
-        <div class="card">
-          <h3 style="margin-top:0">Our Promise</h3>
-          <p class="lead">Every woman deserves to feel confident and stylish without compromising on quality. Our collection is thoughtfully selected to bring you versatile pieces that reflect grace, culture, and contemporary fashion.</p>
+        <div class="hero-card card">
+          <h3>Our Promise</h3>
+          <p>
+            Every woman deserves to feel confident and stylish without compromising on quality. Our selection reflects grace, culture, and contemporary fashion — for daily wear and special occasions.
+          </p>
           <div class="logo-stack">
-            <img src="assets/Da-Liz Designs_Icon Only.png" alt="Lotus icon">
-            <img src="assets/Logo - Hi-Res No Background.png" alt="Da-Liz full logo">
+            <img src="assets/Da-Liz Designs_Icon Only.png" alt="Da-Liz lotus" />
+            <img src="assets/Logo - Hi-Res No Background.png" alt="Da-Liz full logo" />
           </div>
         </div>
       </div>
     </section>
 
-    <section id="collections">
+    <!-- COLLECTIONS -->
+    <section id="collections" class="section">
       <div class="container">
-        <div class="row">
-          <div>
-            <h2 style="margin:0 0 8px;font-size:clamp(22px,3.5vw,32px)">Collections</h2>
-            <p class="lead">Handpicked fabrics and styles — modern silhouettes with a traditional touch.</p>
-          </div>
-          <div style="text-align:right"><a class="btn outline" href="#contact">Ask About Sizes</a></div>
+        <div class="section-head">
+          <h2>Collections</h2>
+          <a class="link" href="#contact">Ask About Sizes →</a>
         </div>
-        <div class="grid-3" style="margin-top:18px">
-          <article class="tile">
-            <div class="ph">Churidars</div>
-            <div class="body">
+
+        <div class="grid-3">
+          <article class="tile card">
+            <div class="tile-img placeholder">Churidars</div>
+            <div class="tile-body">
               <h3>Churidars</h3>
-              <p class="lead">Ready-to-wear comfort and elegance.</p>
+              <p>Ready-to-wear comfort and elegance for everyday confidence.</p>
             </div>
           </article>
-          <article class="tile">
-            <div class="ph">Dress Materials</div>
-            <div class="body">
+
+          <article class="tile card">
+            <div class="tile-img placeholder">Dress Materials</div>
+            <div class="tile-body">
               <h3>Dress Materials</h3>
-              <p class="lead">Premium fabrics, vibrant prints, custom stitching.</p>
+              <p>Premium fabrics, vibrant prints — with custom stitching on request.</p>
             </div>
           </article>
-          <article class="tile">
-            <div class="ph">Kurtas</div>
-            <div class="body">
+
+          <article class="tile card">
+            <div class="tile-img placeholder">Kurtas</div>
+            <div class="tile-body">
               <h3>Kurtas</h3>
-              <p class="lead">Versatile styles for work, casual, and festive wear.</p>
+              <p>Versatile silhouettes for work, casual, and festive moments.</p>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="about" style="background:#fafafa;border-top:1px solid #eee;border-bottom:1px solid #eee">
-      <div class="container row">
+    <!-- ABOUT -->
+    <section id="about" class="section section-alt">
+      <div class="container split">
         <div>
-          <h2 style="margin:0 0 8px;font-size:clamp(22px,3.5vw,32px)">About Da-Liz Designs</h2>
-          <p class="lead">We pride ourselves on curating elegant, comfortable, and trendy ethnic wear that blends traditional charm with a modern touch. Our focus is on delivering premium fabrics, fine craftsmanship, and timeless designs that elevate everyday wear and special occasions alike.</p>
-          <ul class="lead" style="padding-left:18px">
+          <h2>About Da-Liz Designs</h2>
+          <p>
+            We curate elegant, comfortable, and trend-forward ethnic wear that blends traditional charm with a modern touch. Expect premium fabrics, fine craftsmanship, and timeless designs that elevate every occasion.
+          </p>
+          <ul class="checklist">
             <li>Quality-first selection</li>
             <li>Friendly, personalized assistance</li>
             <li>Tailoring support for the perfect fit</li>
           </ul>
         </div>
-        <div class="card cta">
-          <h3 style="margin:0 0 6px">Plan Your Visit</h3>
+        <div class="card promo">
+          <h3>Plan Your Visit</h3>
           <p>Drop by for a personal walk-through of our latest arrivals in Kangarappady (Medical College Rd).</p>
-          <p><a class="btn" href="tel:+919567800229" style="background:#fff;color:var(--rose)">Call Now: +91 95678 00229</a></p>
+          <a class="btn light" href="tel:+919567800229">Call Now: +91 95678 00229</a>
         </div>
       </div>
     </section>
 
-    <section id="visit">
-      <div class="container row">
+    <!-- VISIT -->
+    <section id="visit" class="section">
+      <div class="container split">
         <div>
-          <h2 style="margin:0 0 8px;font-size:clamp(22px,3.5vw,32px)">Visit Us</h2>
-          <p class="lead">Kangarappady, Medical College Rd</p>
-          <p class="lead">Opening Offer: <strong>20% OFF</strong> (17/08/2025 – 07/09/2025)</p>
+          <h2>Visit Us</h2>
+          <p>Kangarappady, Medical College Rd</p>
+          <p class="muted">Opening Offer: <strong>20% OFF</strong> (17/08/2025 – 07/09/2025)</p>
         </div>
         <div class="card">
-          <h3 style="margin:0 0 6px">Quick Directions</h3>
-          <p class="lead">We’re on Medical College Rd, Kangarappady. (Embed Google Map here if needed.)</p>
-          <div class="ph" style="border-radius:12px">Map Placeholder</div>
+          <h3>Quick Directions</h3>
+          <p class="muted">We’re on Medical College Rd, Kangarappady.</p>
+          <!-- Replace src with your Google Maps embed when ready -->
+          <div class="map-placeholder">Map Placeholder</div>
         </div>
       </div>
     </section>
 
-    <section id="contact" style="background:var(--beige)">
-      <div class="container row">
+    <!-- CONTACT -->
+    <section id="contact" class="section section-accent">
+      <div class="container split">
         <div>
-          <h2 style="margin:0 0 8px;font-size:clamp(22px,3.5vw,32px)">Get In Touch</h2>
-          <p class="lead">Questions about sizes, availability, or custom stitching? We’re here to help.</p>
-          <p class="lead"><strong>Phone:</strong> <a href="tel:+919567800229">+91 95678 00229</a><br>
-          <strong>Email:</strong> <a href="mailto:hello@da-liz.com">hello@da-liz.com</a></p>
+          <h2>Get In Touch</h2>
+          <p class="muted">Questions about sizes, availability, or custom stitching? We’re here to help.</p>
+          <p class="muted">
+            <strong>Phone:</strong> <a href="tel:+919567800229">+91 95678 00229</a><br />
+            <strong>Email:</strong> <a href="mailto:hello@da-liz.com">hello@da-liz.com</a>
+          </p>
         </div>
         <div class="card">
-          <h3 style="margin:0 0 6px">Follow & Chat</h3>
-          <p class="lead">WhatsApp: <a href="https://wa.me/919567800229" target="_blank" rel="noopener">wa.me/919567800229</a><br>Instagram: @dalizdesigns</p>
-          <p><a class="btn" href="mailto:hello@da-liz.com">Email Us</a></p>
+          <h3>Follow & Chat</h3>
+          <p class="muted">WhatsApp: <a href="https://wa.me/919567800229" target="_blank" rel="noopener">wa.me/919567800229</a><br />Instagram: @dalizdesigns</p>
+          <a class="btn" href="mailto:hello@da-liz.com">Email Us</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container row">
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
       <div>
-        <strong>Da-Liz Designs</strong><br>
-        <span class="lead">Where Quality Meets Style</span><br>
-        <span class="lead">Kangarappady, Medical College Rd</span>
+        <img class="footer-logo" src="assets/Da-Liz Designs_Name Only.png" alt="Da-Liz Designs" />
+        <p class="muted">Where Quality Meets Style</p>
+        <p class="muted">Kangarappady, Medical College Rd</p>
       </div>
-      <div class="lead" style="text-align:right">© 2025 Da-Liz Designs. All rights reserved.</div>
+      <nav class="footer-links">
+        <a href="#collections">Collections</a>
+        <a href="#about">About</a>
+        <a href="#visit">Visit</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="copyright">© 2025 Da-Liz Designs. All rights reserved.</div>
     </div>
   </footer>
 </body>
