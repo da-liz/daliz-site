@@ -32,12 +32,26 @@ a:hover, a:focus-visible{color:var(--rose-600); text-decoration:underline}
 .container{max-width:var(--maxw); margin:0 auto; padding:0 20px}
 
 /* ===== Global UI ===== */
-.topbar{
-  background:var(--teal);
-  color:#fff;
-  text-align:center; padding:8px 10px; font-weight:600
+.topbar {
+  background: var(--beige);
+  color: var(--teal);
+  text-align: center;
+  padding: 8px 10px;
+  font-weight: 600;
 }
-.topbar strong{color:var(--beige)}
+.topbar strong {
+  color: var(--rose);
+}
+/* .topbar {
+  background: var(--rose);
+  color: #fff;
+  text-align: center;
+  padding: 8px 10px;
+  font-weight: 600;
+}
+.topbar strong {
+  color: var(--beige);
+} */
 
 .site-header{
   position:sticky; top:0; z-index:40;
