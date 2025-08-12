@@ -7,11 +7,21 @@
   <meta name="description" content="Premium churidar sets and stylish kurtas for women. Elegant, comfortable ethnic wear blending tradition and modern design. Kangarappady, Medical College Rd." />
   <link rel="icon" href="assets/favicon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Preload hero image for faster above-the-fold load -->
+  <link rel="preload" as="image" href="interior.jpg" />
+
+  <!-- Open Graph metadata for better social sharing -->
+  <meta property="og:title" content="Da-Liz Designs — Where Quality Meets Style">
+  <meta property="og:description" content="Churidars, dress materials, and kurtas — curated for elegance and comfort. Kangarappady, Medical College Rd.">
+  <meta property="og:image" content="assets/Da-Liz Designs_Name Only.png">
+  <meta property="og:type" content="website">
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <!-- Announcement -->
-  <div class="topbar">
+  <div class="topbar" role="status" aria-live="polite">
     ✨ Opening Offer: <strong>20% OFF</strong> your first purchase — Valid <strong>17/08/2025–07/09/2025</strong> ✨ 
   </div>
 
@@ -19,9 +29,15 @@
   <header class="site-header">
     <div class="container navwrap">
       <a class="brand" href="#home" aria-label="Da-Liz Designs">
-        <img src="assets/Da-Liz Designs_Name Only.png" alt="Da-Liz Designs" />
+        <img src="assets/Da-Liz Designs_Name Only.png" alt="Da-Liz Designs logo" loading="lazy" />
       </a>
-      <nav class="navlinks">
+
+      <!-- Mobile Menu Toggle -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primaryNav">
+        ☰
+      </button>
+
+      <nav class="navlinks" id="primaryNav" aria-label="Primary">
         <a href="#collections">Collections</a>
         <a href="#about">About</a>
         <a href="#visit">Visit</a>
@@ -31,18 +47,20 @@
   </header>
 
   <main id="home">
-    <!-- HERO (uses your interior photo) -->
-    <section class="hero">
-      <div class="overlay"></div>
+    <!-- HERO -->
+    <section class="hero" aria-label="Store interior hero">
+      <div class="overlay" aria-hidden="true"></div>
       <div class="hero-content">
-        <p style="padding-top:600px ;">Da-Liz Designs is a boutique clothing store dedicated to high-quality churidar sets and stylish kurtas for women — curated for elegance, comfort, and modern charm.</p>
+        <p class="lead">
+          Da-Liz Designs is a boutique clothing store dedicated to high-quality churidar sets 
+          and stylish kurtas for women — curated for elegance, comfort, and modern charm.
+        </p>
         <div class="buttons">
           <a href="#collections" class="btn primary">Explore Collections</a>
           <a href="#contact" class="btn secondary">Enquire Now</a>
         </div>
       </div>
     </section>
-
 
     <!-- COLLECTIONS -->
     <section id="collections" class="section">
@@ -57,7 +75,7 @@
             <div class="tile-img">
               <picture>
                 <source srcset="assets/churidars.webp" type="image/webp">
-                <img src="assets/churidars.webp" alt="Churidars">
+                <img src="assets/churidars.webp" alt="Women's churidar outfits on mannequins" loading="lazy">
               </picture>
             </div>
             <div class="tile-body">
@@ -70,7 +88,7 @@
             <div class="tile-img">
               <picture>
                 <source srcset="assets/churidars_materials.webp" type="image/webp">
-                <img src="assets/churidars_materials.webp" alt="Churidars">
+                <img src="assets/churidars_materials.webp" alt="Dress material fabrics including cotton and silk" loading="lazy">
               </picture>
             </div>
             <div class="tile-body">
@@ -83,7 +101,7 @@
             <div class="tile-img">
               <picture>
                 <source srcset="assets/kerala_women_kurtas.webp" type="image/webp">
-                <img src="assets/kerala_women_kurtas.webp" alt="Churidars">
+                <img src="assets/kerala_women_kurtas.webp" alt="Kerala-style women's kurtas" loading="lazy">
               </picture>
             </div>
             <div class="tile-body">
@@ -112,7 +130,7 @@
         <div class="card promo">
           <h3>Plan Your Visit</h3>
           <p>Drop by for a personal walk-through of our latest arrivals in Kangarappady (Medical College Rd).</p>
-          <a class="btn light" href="tel:+919567800229">Call Now: +91 95678 00229</a>
+          <a class="btn light" href="tel:+919567800229" aria-label="Call Da-Liz Designs">Call Now: +91 95678 00229</a>
         </div>
       </div>
     </section>
@@ -128,7 +146,24 @@
         <div class="card">
           <h3>Quick Directions</h3>
           <p class="muted">We’re on Medical College Rd, Kangarappady.</p>
-          <div class="map-placeholder">Map Placeholder</div>
+
+          <!-- Embedded Live Map (replaces placeholder) -->
+          <iframe
+            src="https://www.google.com/maps?q=10.043220,76.354016&output=embed"
+            width="100%"
+            height="260"
+            style="border:0; border-radius:14px;"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Map: Da-Liz Designs Location">
+          </iframe>
+
+          <p style="margin-top:12px">
+            <a class="link" href="https://www.google.com/maps/search/?api=1&query=10.043220,76.354016" target="_blank" rel="noopener" aria-label="Open location in Google Maps">
+              Open in Google Maps →
+            </a>
+          </p>
         </div>
       </div>
     </section>
@@ -146,7 +181,10 @@
         </div>
         <div class="card">
           <h3>Follow & Chat</h3>
-          <p class="muted">WhatsApp: <a href="https://wa.me/919567800229" target="_blank" rel="noopener">wa.me/919567800229</a><br />Instagram: @dalizdesigns</p>
+          <p class="muted" aria-label="Social links">
+            WhatsApp: <a href="https://wa.me/919567800229" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">wa.me/919567800229</a><br />
+            Instagram: <span aria-label="Instagram handle">@dalizdesigns</span>
+          </p>
           <a class="btn" href="mailto:daliz.designs@gmail.com">Email Us</a>
         </div>
       </div>
@@ -157,11 +195,11 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <img class="footer-logo" src="assets/Da-Liz Designs_Name Only.png" alt="Da-Liz Designs" />
+        <img class="footer-logo" src="assets/Da-Liz Designs_Name Only.png" alt="Da-Liz Designs wordmark" loading="lazy" />
         <p class="muted">Where Quality Meets Style</p>
         <p class="muted">Kangarappady, Medical College Rd</p>
       </div>
-      <nav class="footer-links">
+      <nav class="footer-links" aria-label="Footer">
         <a href="#collections">Collections</a>
         <a href="#about">About</a>
         <a href="#visit">Visit</a>
@@ -170,5 +208,20 @@
       <div class="copyright">© 2025 Da-Liz Designs. All rights reserved.</div>
     </div>
   </footer>
+
+  <!-- Sticky call on mobile -->
+  <a class="sticky-call" href="tel:+919567800229" aria-label="Call Da-Liz Designs">Call</a>
+
+  <!-- Simple mobile menu toggle -->
+  <script>
+    const btn = document.getElementById('menuToggle');
+    const nav = document.getElementById('primaryNav');
+    if (btn && nav) {
+      btn.addEventListener('click', () => {
+        const open = nav.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    }
+  </script>
 </body>
 </html>
